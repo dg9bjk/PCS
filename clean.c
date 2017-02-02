@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-#include "clean.h"
+#include "main.h"
 
 int clean()
 {

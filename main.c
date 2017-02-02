@@ -16,6 +16,14 @@
 /*
  * 
  */
+void displayhelp()
+{
+    ;
+}
+
+/*
+ * 
+ */
 int main(int argc, char** argv) {
 
     int Feedback   = -1; // Feedback to System
@@ -26,13 +34,23 @@ int main(int argc, char** argv) {
     int initback   = -1; // Feedback Init    -9 ...0... 9
     int ctrlback   = -1; // Feedback Control -9 ...0... 9
     int cleanback  = -1; // Feedback Cleanup -9 ...0... 9
-
+    struct Cfg Config;
+   
     printf("\n");
     printf("\n PCS System Version %d.%d.%d.%d",MajorVers,MinorVers,RevVers,BuildVers);
     printf("\n");
     
+    if(argc < 2)
+    {
+        ;
+    }
+    else
+    {
+        displayhelp();
+    }
+        
     // call Init-Funktion
-    initback = init();
+    initback = init(&Config);
     printf("\n");
     
     // call Control-Funktion
@@ -46,6 +64,6 @@ int main(int argc, char** argv) {
     Feedback = (initback * 100) + (ctrlback *10) + cleanback ;
     printf("\n");
 
-    return (EXIT_SUCCESS);
+    return (Feedback);
 }
     

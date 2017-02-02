@@ -12,8 +12,6 @@
  */
 
 #ifndef CTRL_H
-#include <stdio.h>
-#include <stdlib.h>
 #define CTRL_H
 
 #ifdef __cplusplus

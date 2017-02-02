@@ -12,8 +12,6 @@
  */
 
 #ifndef INIT_H
-#include <stdio.h>
-#include <stdlib.h>
 #define INIT_H
 
 #ifdef __cplusplus

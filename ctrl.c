@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-#include "ctrl.h"
+#include "main.h"
 
 int ctrl() // Demo-Mode
 {

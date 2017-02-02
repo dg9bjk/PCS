@@ -12,8 +12,6 @@
  */
 
 #ifndef CLEAN_H
-#include <stdio.h>
-#include <stdlib.h>
 #define CLEAN_H
 
 #ifdef __cplusplus

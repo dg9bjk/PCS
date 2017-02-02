@@ -14,6 +14,34 @@
 #ifndef MAIN_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#define MAXPATHLENGTH   256
+
+/*
+ *  Datenstruktur for Configuration
+ */
+struct Clt_Conf
+{
+    int pos;
+    int mode;
+    char ipaddress;
+    int port;
+    int timeout;
+    struct Clt_Conf *next_Clt_Conf;
+};
+
+struct Cfg
+{
+    char InfoPath[MAXPATHLENGTH];
+    char LogPath[MAXPATHLENGTH];
+    char VisuPath[MAXPATHLENGTH];
+    char WebPath[MAXPATHLENGTH];
+    int Clt_Cnt;
+    int Svr_Port;
+    struct Clt_Conf *Clt_Ptr;
+};
+
 #define MAIN_H
 
 #ifdef __cplusplus
