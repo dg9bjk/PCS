@@ -1,9 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.c
+ * Author: jens
+ *
+ * Created on 2. Februar 2017, 15:57
+ */
+
 #include "main.h"
 
-int main()
-{
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
     int Feedback   = -1; // Feedback to System
     int MajorVers  = 0;  // Versionnumbers
     int MinorVers  = 0;
@@ -30,8 +44,8 @@ int main()
     printf("\n");
     
     Feedback = (initback * 100) + (ctrlback *10) + cleanback ;
-
     printf("\n");
-    
-    return(Feedback);
+
+    return (EXIT_SUCCESS);
 }
+    
